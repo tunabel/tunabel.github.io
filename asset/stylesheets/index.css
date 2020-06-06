@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     padding: 0;
     font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,9 +11,8 @@ body {
 }
 
 #navbar {
-    width: 100vw;
+    /*width: 100vw;*/
     background-color:rgb(119, 20, 20);
-
     position: sticky;
     top: 0;
 }
@@ -52,7 +52,7 @@ section {
 }
 
 #welcome-section {
-    background-image: url("https://i.ibb.co/c8nsLnV/backgroundsm-or.jpg");
+    background-image: url("../images/backgroundsm-or.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -80,6 +80,10 @@ section {
 
 #about-title, #projects-title {
     font-size: 2rem;
+}
+
+#projects-title {
+    margin-top: 4rem;
 }
 
 .title-spacer {
@@ -126,21 +130,29 @@ section {
     background-color:rgb(48, 56, 65);
 }
 
+.project-tile:hover {
+    position: relative;
+    bottom: 5px;
+}
+
 .project-image {
     max-width: 100%;
 }
 
-.project-name, .project-name-hidden {
+.project-name {
     text-align: center;
     font-weight: 400;
     font-size: 1.3rem;
-    padding: 1rem 0;
     color: white;
+    text-decoration: none;
 }
 
-.project-name-hidden {
-    display: none;
-}
+/*.project-name:hover {*/
+/*    display:none*/
+/*}*/
+
+
+
 
 #projects-more {
     padding: 1rem 2rem;
